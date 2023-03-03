@@ -1,0 +1,36 @@
+# Set up a simple chain of commits and check their log.
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "added wug"
+<<<
+> branch other
+<<<
+> checkout other
+<<<
++ tiger.txt tiger.txt
++ bear.txt bear.txt
+> add tiger.txt
+<<<
+> add bear.txt
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
+> commit "added tiger and bear and changed wug to not wug"
+<<<
+> checkout master
+<<<
++ giraffe.txt giraffe.txt
+> add giraffe.txt
+<<<
++ wug.txt diffwug.txt
+> add wug.txt
+<<<
+> commit "added giraffe and and changed wug to diff wug"
+<<<
+> merge other
+Encountered a merge conflict.
+<<<

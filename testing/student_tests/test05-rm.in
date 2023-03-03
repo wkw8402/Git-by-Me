@@ -1,0 +1,20 @@
+# Check that we can check out a previous version.
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "version 1 of wug.txt"
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
++ tiger.txt tiger.txt
++ bear.txt bear.txt
+> add bear.txt
+<<<
+> commit "version 2 of wug.txt"
+<<<
+> rm bear.txt
+<<<
+* bear.txt
